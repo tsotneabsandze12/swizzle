@@ -1,0 +1,100 @@
+.content{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 0 1px #337ab7;
+}
+.img-wrapper {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+}
+.img-wrapper img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+.img-wrapper h2,h4{
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+}
+.brief-info{
+    display: flex;
+    flex: 1;
+    text-align: start;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 5px;
+    color: #dddddd;
+}
+.brief-info li{
+    font-size: 20px;
+    margin: 5px;
+}
+.instructions{
+    flex: 3;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+.instructions h2{
+    color: white;
+    font-size: 30px;
+    margin: 5px auto 15px auto;
+}
+.text{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: start;
+    border:2px white;
+}
+
+
+.table-wrapper{
+    flex: 2;
+    margin: 10px;
+    padding: 5px;
+}
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th {
+    text-align: start;
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: white;
+}
+
+.table tr:nth-child(even){background-color: #08528a;}
+
+.table tr:hover {background-color: #176e96;}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #171717;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .content{
+        flex-direction: column;
+    }
+    .brief-info{
+        justify-content: center;
+    }
+    ul {
+        text-align: center;
+    }
+}
+

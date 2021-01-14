@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styling/reset.css">
+    <link rel="stylesheet" href="../styling/shared.css">
+    <link rel="stylesheet" href="../styling/details.css">
+    <title>Details</title>
+</head>
+<body>
+
+<header>
+    <a href="#" class="toggle" id="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="container">
+        <div class="logo-container">
+            <img src="../pics/white-lady.svg" alt="logo">
+            <h4 class="logo">
+                <a href="../templates/main.html">
+                    Swizzle
+                </a>
+            </h4>
+        </div>
+        <nav id="nav">
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#">Contribute</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+                <li><a class="nav-link" href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="account" id="acc">
+            <a href="../templates/registration.html">Register</a>
+            <span>|</span>
+            <a href="#">Log Out</a>
+        </div>
+    </div>
+</header>
+<div class="content">
+    <div class="img-wrapper" id="img-wrapper">
+        <div id="img-div">
+
+        </div>
+        <div class="brief-info" id="brief-info">
+            <ul id="brief-info-ul">
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="instructions" id="instructions">
+        <h2>Instructions</h2>
+        <div class="text" id="text">
+
+        </div>
+        <div class="table-wrapper">
+            <table id="table" class="table">
+                <tr>
+                    <th>ingredient</th>
+                    <th>measure</th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <span>© Swizzle 2021</span>
+    </div>
+</footer>
+<script type="module" defer src="../logic/details.mjs">
+
+
+</script>
+
+</body>
+</html>
