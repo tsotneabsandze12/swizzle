@@ -23,6 +23,7 @@ function fetchApi(key) {
 export function populatePage(data) {
     let parentElement = document.getElementById('deck');
 
+    let fragment = document.createDocumentFragment();
     data.drinks.forEach(item => {
         let card = document.createElement('div');
         card.className = 'card';
@@ -41,8 +42,9 @@ export function populatePage(data) {
 
         card.appendChild(a);
 
-        parentElement.appendChild(card);
+        fragment.appendChild(card);
     })
+    parentElement.appendChild(fragment);
 }
 
 
